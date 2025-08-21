@@ -7,22 +7,19 @@ Este projeto é a implementação do desafio Batalha Naval - Nível Aventureiro 
   Criação de um tabuleiro 10x10.
   
   Posicionamento automático de 4 navios:
-  
+    
     1 horizontal
-  
-    1 vertical
-  
+    1 vertical   
     2 diagonais
   
   Validação para evitar sobreposição e posições inválidas.
   
   Impressão do tabuleiro completo com a posição dos navios.
 
-🛠️ Tecnologias
-
-  Linguagem: C
+ Tecnologias
   
-  Ambiente: Console
+    Linguagem: C
+    Ambiente: Console
 
 📌 Autor
   Projeto desenvolvido por Eduardo Jorge Moura da Silva
