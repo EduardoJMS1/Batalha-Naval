@@ -1,12 +1,3 @@
-/* ---------------------------------------------------------------
- * Batalha Naval – Nível Aventureiro (matriz 10x10)
- * Regras do nível:
- * - Exibir o tabuleiro completo (0 = vazio, 3 = ocupado)
- * - Posicionar 4 navios: 1 horizontal, 1 vertical e 2 diagonais
- * - Entradas "manuais" via variáveis no código (sem scanf)
- * - Sem sobreposição e respeitando os limites do tabuleiro
- * --------------------------------------------------------------- */
-
 #include <stdio.h>
 
 #define TAM     10     // tamanho do tabuleiro: 10x10
@@ -16,9 +7,9 @@
 typedef enum { HORIZONTAL, VERTICAL, DIAG_PRINCIPAL, DIAG_SECUNDARIA } Direcao;
 
 typedef struct {
-    int linha;    // 0..9
-    int coluna;   // 0..9
-    int tamanho;  // >= 1
+    int linha;   
+    int coluna;   
+    int tamanho;  
     Direcao dir;
 } Navio;
 
@@ -71,10 +62,7 @@ int main(void) {
     int tab[TAM][TAM];
     inicializar(tab);
 
-    /* ======= NAVIOS (insira/edite aqui) =======
-     * Coordenadas são 0-based. Altere linha, coluna, tamanho e direção
-     * como quiser. Este conjunto já evita sobreposições:
-     */
+    /* ======= NAVIOS =======*/
     Navio frota[4] = {
         { .linha = 2, .coluna = 1, .tamanho = 4, .dir = HORIZONTAL     }, // →
         { .linha = 5, .coluna = 0, .tamanho = 3, .dir = VERTICAL       }, // ↓
@@ -93,4 +81,5 @@ int main(void) {
 
     imprimir(tab);   // saída completa exigida: 0 = livre, 3 = ocupado
     return 0;
+
 }
